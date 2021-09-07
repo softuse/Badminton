@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SimpleComputApp.MainPage">
+
+    <ContentPage.Resources>
+
+        <ResourceDictionary>
+
+            <Color x:Key="PanelBackgroundColor">Aqua</Color>
+            <Color x:Key="TextBackgroundColor">Beige</Color>
+            <x:String x:Key="AppName">场地费:</x:String>
+            <x:String x:Key="fontSize">25</x:String>
+
+            <Style x:Key="labelStyle" TargetType="Label">
+                <Setter Property="VerticalTextAlignment" Value="Center" />
+                <Setter Property="HorizontalTextAlignment" Value="Center" />
+                <Setter Property="FontSize" Value="25" />
+                <Setter Property="Margin" Value="0,2,5,2" />
+                <Setter Property="Background" Value="Aqua" />
+            </Style>
+
+            <Style x:Key="editorStyle" TargetType="Editor">
+                <Setter Property="HorizontalOptions" Value="Fill" />
+                <Setter Property="Background" Value="Beige" />
+            </Style>
+
+
+
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="Welcome to Xamarin.Forms!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        <Label Text="Start developing now" FontSize="Title" Padding="30,10,30,10"/>
+        <Label Text="Make changes to your XAML file and save to see your UI update in the running app with XAML Hot Reload. Give it a try!" FontSize="16" Padding="30,0,30,0"/>
+        <Label FontSize="16" Padding="30,24,30,0">
+            <Label.FormattedText>
+                <FormattedString>
+                    <FormattedString.Spans>
+                        <Span Text="Learn more at "/>
+                        <Span Text="https://aka.ms/xamarin-quickstart" FontAttributes="Bold"/>
+                    </FormattedString.Spans>
+                </FormattedString>
+            </Label.FormattedText>
+        </Label>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="3*"></ColumnDefinition>
+                <ColumnDefinition Width="2*"></ColumnDefinition>
+                <ColumnDefinition Width="2*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="3*"></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <Label 
+              Grid.Row="0" Grid.Column="0" Text="{StaticResource AppName}" Style="{StaticResource labelStyle}"></Label>
+            <Label   Grid.Row="1" Grid.Column="0" Text="球费:" 
+                Style="{StaticResource labelStyle}"></Label>
+            <Label Grid.Row="2" Grid.Column="0" Text="两小时人数:" 
+                Style="{StaticResource labelStyle}"></Label>
+            <Label  Grid.Row="3" Grid.Column="0" Text="一小时人数:" 
+               Style="{StaticResource labelStyle}"></Label>
+
+            <Editor Grid.Row="0" Grid.Column="1"  x:Name="siteusefee" AutoSize="TextChanges" Margin="0,0" MinimumWidthRequest="60"
+                Style="{StaticResource editorStyle}" ></Editor>
+
+            <Editor Grid.Row="1" Grid.Column="1" x:Name="ballfee" 
+                Style="{StaticResource editorStyle}"></Editor>
+            <Editor Grid.Row="2" Grid.Column="1" x:Name="twoHoursPeopleNum" 
+                Style="{StaticResource editorStyle}"></Editor>
+            <Editor Grid.Row="3" Grid.Column="1" x:Name="oneHoursPeopleNum" 
+                Style="{StaticResource editorStyle}"></Editor>
+
+
+            <Button x:Name="PressMeButton"
+                Text="计 算"
+                Pressed="PressMeButton_Pressed"
+                Clicked="PressMeButton_Clicked"
+                Grid.Row="4" Grid.Column="0"
+                    BackgroundColor="CornflowerBlue"
+                    CornerRadius="10"
+                    />
+            <Editor x:Name="rich" Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2"></Editor>
+        </Grid>
+    </StackLayout>
+
+</ContentPage>

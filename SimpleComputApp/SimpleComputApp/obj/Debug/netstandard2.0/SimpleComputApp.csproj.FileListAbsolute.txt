@@ -1,0 +1,15 @@
+F:\testCode\Badminton\SimpleComputApp\SimpleComputApp\bin\Debug\netstandard2.0\SimpleComputApp.deps.json
+F:\testCode\Badminton\SimpleComputApp\SimpleComputApp\bin\Debug\netstandard2.0\SimpleComputApp.dll
+F:\testCode\Badminton\SimpleComputApp\SimpleComputApp\bin\Debug\netstandard2.0\ref\SimpleComputApp.dll
+F:\testCode\Badminton\SimpleComputApp\SimpleComputApp\bin\Debug\netstandard2.0\SimpleComputApp.pdb
+F:\testCode\Badminton\SimpleComputApp\SimpleComputApp\obj\Debug\netstandard2.0\SimpleComputApp.csproj.AssemblyReference.cache
+F:\testCode\Badminton\SimpleComputApp\SimpleComputApp\obj\Debug\netstandard2.0\SimpleComputApp.GeneratedMSBuildEditorConfig.editorconfig
+F:\testCode\Badminton\SimpleComputApp\SimpleComputApp\obj\Debug\netstandard2.0\App.xaml.g.cs
+F:\testCode\Badminton\SimpleComputApp\SimpleComputApp\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+F:\testCode\Badminton\SimpleComputApp\SimpleComputApp\obj\Debug\netstandard2.0\SimpleComputApp.AssemblyInfoInputs.cache
+F:\testCode\Badminton\SimpleComputApp\SimpleComputApp\obj\Debug\netstandard2.0\SimpleComputApp.AssemblyInfo.cs
+F:\testCode\Badminton\SimpleComputApp\SimpleComputApp\obj\Debug\netstandard2.0\SimpleComputApp.csproj.CoreCompileInputs.cache
+F:\testCode\Badminton\SimpleComputApp\SimpleComputApp\obj\Debug\netstandard2.0\XamlC.stamp
+F:\testCode\Badminton\SimpleComputApp\SimpleComputApp\obj\Debug\netstandard2.0\SimpleComputApp.dll
+F:\testCode\Badminton\SimpleComputApp\SimpleComputApp\obj\Debug\netstandard2.0\ref\SimpleComputApp.dll
+F:\testCode\Badminton\SimpleComputApp\SimpleComputApp\obj\Debug\netstandard2.0\SimpleComputApp.pdb
